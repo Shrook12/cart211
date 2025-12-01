@@ -105,10 +105,10 @@ p {
 
 .feed {
     height: 150px;
-    background: #000;
-    border: 2px solid #333;
+    background: #481010;
+    border: 2px solid #580404;
     position: relative;
-    filter: grayscale(100%) contrast(180%);
+    border-radius: 10px;
 }
 
 .feed::after {
