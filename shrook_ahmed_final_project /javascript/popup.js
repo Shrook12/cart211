@@ -1,26 +1,28 @@
-// --- Global Flags Required for Synchronization ---
+//this is for the impact page
+
+
 let isMenuOpen = false;
 let isScrollingDisabled = false;
 
+//for menu
 
-// --- THIS FUNCTION MUST BE ADDED TO YOUR SCRIPT ---
 function toggleMenu() {
     const button = document.getElementById('menuButton');
     const popup = document.getElementById('menuPopup');
 
-    // Toggle the CSS classes that show/hide the menu and change the button icon
+
     button.classList.toggle('open');
     popup.classList.toggle('open');
 
-    // Update the global flag state
+
     isMenuOpen = popup.classList.contains('open');
 
-    // Manage the custom scrolling behavior:
+
     if (isMenuOpen) {
-        // Stop custom scrolling immediately when menu opens
+
         isScrollingDisabled = true;
     } else {
-        // Re-enable scrolling after the menu close transition finishes (350ms buffer)
+
         setTimeout(() => {
             isScrollingDisabled = false;
         }, 350);
@@ -28,7 +30,6 @@ function toggleMenu() {
 }
 
 
-// --- Your existing horizontal scroll JS starts here ---
 
 const isMobile = window.matchMedia("(max-width: 768px)");
 const sections = document.querySelectorAll(".section");
@@ -68,7 +69,7 @@ if (!isMobile.matches) {
     });
 
 
-    // Animation Loop and Section Opacity Logic (updated with check)
+    // Animation Loop and Section Opacity Logic 
     function animate() {
         if (!isScrollingDisabled) { // Check the flag here
             currentX += (targetX - currentX) * speed;
@@ -94,13 +95,13 @@ if (!isMobile.matches) {
     }
 
 } else {
-    // Mobile view logic
+    // Mobile view 
     sections.forEach(sec => {
         sec.classList.add("active");
     });
 }
 
-// --- MODAL CODE (Runs on both Mobile and Desktop) ---
+// this is for the pop up
 const modal = document.getElementById('modal');
 const closeModalButton = document.getElementById('close-modal');
 const thirdSection = document.getElementById('s3'); // Ensure this ID exists in HTML
@@ -121,7 +122,7 @@ const popupIntervalId = setInterval(showModal, 1000);
 
 closeModalButton.addEventListener('click', hideModal);
 
-// --- Intersection Observer Code ---
+// Intersection Observer Code 
 const observerOptions = {
     root: null,
     rootMargin: '0px',

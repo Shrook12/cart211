@@ -1,3 +1,4 @@
+//this is for the small menu for horizontal pages.
 function toggleMenu() {
     const button = document.getElementById('menuButton');
     const popup = document.getElementById('menuPopup');

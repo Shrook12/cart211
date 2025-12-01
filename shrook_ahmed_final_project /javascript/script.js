@@ -1,3 +1,5 @@
+// for nav mobile
+
 document.addEventListener('DOMContentLoaded', () => {
     const hamburgerButton = document.querySelector('.hamburger-menu button');
     const closeButton = document.querySelector('.close-menu');
@@ -14,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
+// for camera hover
 
 const triggerArea = document.getElementById('hover-trigger');
 const bodyElement = document.body;
@@ -38,7 +40,7 @@ triggerArea.addEventListener('mouseover', function () {
 
 });
 
-// === MATRIX BACKGROUND ===
+// MATRIX BACKGROUND 
 const matrixCanvas = document.getElementById('matrixCanvas');
 const matrixCtx = matrixCanvas.getContext('2d');
 

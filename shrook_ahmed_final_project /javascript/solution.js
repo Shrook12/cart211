@@ -1,3 +1,4 @@
+// this is  for the solution section
 
 const isMobile = window.matchMedia("(max-width: 768px)");
 const sections = document.querySelectorAll(".section");
@@ -65,7 +66,7 @@ if (!isMobile.matches) {
         sec.classList.add("active");
     });
 }
-// for progress line
+
 let completed = 0;
 
 function activate(id) {
@@ -74,7 +75,7 @@ function activate(id) {
     if (!item.classList.contains("active")) {
         item.classList.add("active");
 
-        // Increase progress by 16.6% for each item (100/6)
+
         completed += 16.6;
 
         if (completed > 100) completed = 100;

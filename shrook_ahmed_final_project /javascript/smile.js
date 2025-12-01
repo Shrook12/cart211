@@ -1,5 +1,5 @@
 
-
+// nice smile
 const niceSmileCanvas = document.getElementById("niceSmile");
 const niceSmileCtx = niceSmileCanvas.getContext("2d");
 
