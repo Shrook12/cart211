@@ -1,0 +1,47 @@
+.section {
+    width: 70vw !important;
+
+
+}
+
+.img-solution {
+    height: 600px;
+
+    border-radius: 20px;
+
+}
+
+/* Solution buttons */
+.solution {
+    background: #222;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 260px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.solution.active {
+    background: #ff0000;
+    border-color: #ff0000;
+    color: #000;
+    box-shadow: 0 0 15px #ff0000;
+}
+
+/* Progress bar container */
+.progress-box {
+    width: 300px;
+    background: #333;
+    margin-top: 25px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 12px;
+    width: 0%;
+    background: #ff0000;
+    transition: width 0.5s ease;
+}
